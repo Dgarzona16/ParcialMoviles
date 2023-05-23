@@ -1,6 +1,6 @@
 package com.dgarzona.parcialmoviles.models
 
 data class Actress(
-    val name : String,
+    var name : String,
     val age : Int
 )
