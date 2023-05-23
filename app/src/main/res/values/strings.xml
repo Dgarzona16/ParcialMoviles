@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Parcial Moviles</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="actress_details">Actress Details</string>
+    <string name="new_actress">Add New Actress</string>
+    <string name="edit_actress_name">Name</string>
+    <string name="edit_actress_age">age</string>
+    <string name="submit">submit</string>
 </resources>

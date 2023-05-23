@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/actressContainerFragment">
+
+    <fragment
+        android:id="@+id/actressContainerFragment"
+        android:name="com.dgarzona.parcialmoviles.ui.actressContainer.ActressContainerFragment"
+        android:label="ActressContainerFragment" >
+        <action
+            android:id="@+id/action_actressContainerFragment_to_newActressFragment"
+            app:destination="@id/newActressFragment" />
+        <action
+            android:id="@+id/action_actressContainerFragment_to_actressDetailsFragment"
+            app:destination="@id/actressDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newActressFragment"
+        android:name="com.dgarzona.parcialmoviles.ui.newActress.NewActressFragment"
+        android:label="NewActressFragment" >
+        <action
+            android:id="@+id/action_newActressFragment_to_actressContainerFragment"
+            app:destination="@id/actressContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actressDetailsFragment"
+        android:name="com.dgarzona.parcialmoviles.ui.actressDetails.ActressDetailsFragment"
+        android:label="ActressDetailsFragment" >
+        <argument
+            android:name="actress_name"
+            app:argType="string"
+            android:defaultValue="Margot Robbie" />
+    </fragment>
+</navigation>
